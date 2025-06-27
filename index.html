@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wind Breaker S3 - Streaming Eksklusif</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle, #0a0a0a, #000000);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .anime-image {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+      margin-bottom: 30px;
+    }
+    .title {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+      margin-bottom: 10px;
+    }
+    .sub-title {
+      font-size: 1.3rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+    .watch-button {
+      background: linear-gradient(135deg, #00ffff, #0088ff);
+      color: black;
+      padding: 20px 50px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 0 25px #00ffff80;
+      transition: all 0.3s ease;
+    }
+    .watch-button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #00dddd, #0066cc);
+    }
+    .fake-loading {
+      margin-top: 40px;
+      font-size: 1.3rem;
+      color: #aaa;
+      display: none;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #ff4444;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff000088;
+    }
+    .rickroll {
+      display: none;
+      margin-top: 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.ytimg.com/vi/u23E730dFNw/maxresdefault.jpg" alt="Wind Breaker S3" class="anime-image">
+    <div class="title">Wind Breaker Season 3</div>
+    <div class="sub-title">Streaming Eksklusif Hanya di Sini</div>
+    <button class="watch-button" onclick="mulaiPrank()">▶ Tonton Sekarang</button>
+    <div id="loading" class="fake-loading">Sedang memuat video...</div>
+    <div id="message"></div>
+    <div class="rickroll" id="rickroll">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>  <script>
+    function mulaiPrank() {
+      const loading = document.getElementById("loading");
+      const message = document.getElementById("message");
+      const rickroll = document.getElementById("rickroll");
+
+      loading.style.display = "block";
+      message.innerText = "";
+
+      setTimeout(() => {
+        loading.innerText = "Menghubungkan ke server, harap tunggu...";
+      }, 1200);
+
+      setTimeout(() => {
+        loading.innerText = "Memulai streaming Windberaker Season 3...";
+      }, 2500);
+
+      setTimeout(() => {
+        loading.style.display = "none";
+        message.innerText = "Server sedang down, HAHAA MAU AJA DIBOONGINN!";
+        rickroll.style.display = "block";
+      }, 4200);
+    }
+  </script></body>
+</html>
